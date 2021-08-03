@@ -4,52 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="decription" content=" ">
-    <meta name="keywords" content="HTML, CSS, Bug Tracker, issue.">
+    <meta name="keywords" content="HTML, CSS, Bug, Issue, Tracker">
     <meta name="author" content="Kristoff L.">
     <meta name="viewpoint" content="width=devicewidth", initial-scale="1.0">
 
     <title> Bug Tracker </title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-    <div id="container">
-        
+    <div id="container"> 
         <div class="list">
             <h1> ISSUES</h1>
             <button id="addBtn"> + ADD ISSUES</button>
-        
+            <!-- FIRST ATTEMPT
             <div class="todo">
-                Lorem Ipsum
-            <span class="close">&times;</span>    
-            </div>
-        
-        <!-- 
-       
-                <div class="card">
-                    <div class="title">Lorem Ipsum</div>
-                </div>
-            </div>-->
+              
+               'X' Displayed at end of text
+            <span class="close">
+                &times;
+            </span>    
+            -->
+            <div class="card" draggable="true">
+                <div class="title"> Lorem Ipsum - Test Header </div>
+                <div class="description">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry, it has been the industry's 
+                standard dummy text ever since the 1500s.
+                </div> 
+            </div>        
+
         </div>
         
 
-
-
+        <!--NOT STARTED CONTAINER-->
         <div class="list">
             <h1> Not Started </h1>
+
+            <div class="card">
+            <div class="title"> Lorem Ipsum - Test Header </div>
+            <div class="description">
+            Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry, it has been the industry's 
+            standard dummy text ever since the 1500s.
+            </div> 
+        </div>
         </div>
 
+        <!--IN PROGRESS CONTAINER-->
         <div class="list">
             <h1> In Progress </h1>
         </div>
 
+        <!--COMPLETED CONTAINER-->
         <div class="list">
             <h1> Completed </h1>
         </div>
    
     </div>
+
+
+
+<!--    NOTES SECTION --- DONT NEED ATM --
+    <div id="notes">
+        <div class="notepad">
+            <h2> NOTEPAD </h2>
+            <button id="addNotesBtn"> + Add Notes</button>
+
+
+            <div class="notebook">
+
+            </div>
+        </div>
+    </div>
+-->
+
 </body>
 
 
@@ -59,3 +88,7 @@
 
 
 </html>
+
+
+<!--CODE SPRINT #1 -- Bug/Issues Tracker  ** --
+   KRISTOFF L.  © Kristoff L. All Rights Reserved-->
