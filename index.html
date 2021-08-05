@@ -11,83 +11,79 @@
     <title> Bug Tracker </title>
 
     <link rel="stylesheet" href="indexstyle.css">
+    <title> Home Page</title>
 </head>
 
 
 <body>
+    <div class="container" id="container">
+       
+        <!-- Sign Up Container -->
+        <div class="form-container sign-up-container"> 
+            <form action="#">
+                <h1> Create Account</h1>
+                <div class="social-links">
+                    <a  href="#" class="social"><i class="fab fa-facebook"></i></a>
+                    <a  href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a  href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
 
-    <div class="full-page">
-        <div class="navbar">
-            <div>
-                <a href="index.html"> Home </a>
-            </div>
-            <nav>
-                <ul id="menuItems">
-                    <li> <a href="#"> Home </a> </li>
-                    <li> <a href="#"> About </a> </li>
-                    <li> <a href="#"> Bug Tracker </a> </li>
-                    <li> <button class="loginBtn" 
-                          onclick="document.getElementById('login-form').style.display='block'" 
-                          style="width: auto;">
-                    Login</button>   
-                    </li>
-                </ul>
-            </nav>
+                <span> or use email resgitration</span>
+                <input type="text" placeholder="Name"/>
+                <input type="email" placeholder="Email"/>
+                <input type="password" placeholder="Password"/>
+                <button> Sign Up !</button>
+            </form>
         </div>
 
-        <div id="login-form" class="login-page">
-            <div class="button-box">
-                <div id="btn">  </div>
-                <button type="button" onclick="login()" class="toggle-btn"> Log In </button>
-                <button type="button" onclick="register()" class="toggle-btn"> Register </button>
-            </div>
+        <!--    Sign-In/Log In In Container-->
+        <div class="form-container sign-in-container"> 
+            <form action="#">
+                <h1> Log In</h1>
+                <div class="social-container">
+                    <a  href="#" class="social"><i class="fab fa-facebook"></i></a>
+                    <a  href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a  href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
 
-            <!--    Login Form-->
-
-            <form id="login" class="input-group-login">
-                <input type="text" class="input-field" placeholder="Email" required>
-                <input type="password" class="input-field" placeholder="Enter Password" required>
-                
-                <input type="checkbox" class="checkbox"><span>Remember Password </span> 
-                <button type="submit"  class="submit-btn"> Log In </button>
+                <span> or use your account</span>
+                <input type="email" placeholder="Email"/>
+                <input type="password" placeholder="Password"/>
+                <button> Sign In !</button>
             </form>
-            
-            <!--    Registration Form-->
-            <form id="register" class="input-group-register">
-                <input type="text" class="input-field" placeholder="First Name" required>
-                <input type="text" class="input-field" placeholder="Last Name" required>      
-                <input type="email" class="input-field" placeholder="Email ID" required>
-                <input type="text" class="input-field" placeholder="Last Name" required>
-                <input type="password" class="input-field" placeholder="Enter Password" required>
-   
-                <input type="checkbox" class="checkbox"><span>I agree to Terms & Conditions </span> 
-                <button type="submit"  class="submit-btn"> Register </button>
-            </form>
-
-
         </div>
 
+         <!--    Welcome Back! Action Director Container-->
+         <div class="overlay-container"> 
+            <form action="#">
+                <h1> Welcome Back!</h1>
+                <p>
+                    To keep issues Please Login with Information
+                </p>
+                <button class="ghost" id="signIn"> Log In</button>
+
+                <div class="overlay-panel overlay-right">
+                   
+                </div>
+                <h1> Welcome Back!</h1>
+                <p>
+                    To start Issues Tracking Sign Up with Information
+                </p>
+                <button class="ghost" id="signUn"> Sign Un</button>
+            </form>
+        </div>
 
     </div>
-
-
-    <a href="bugtrack.html">
+    
+     <!--   Bypass Action Container & button-->
+    <div>
+       <a href="bugtrack.html">
         <button> ByPass To Tracker </button>
         <small><p>Issues will not be saved with bypassing login.</p></small>
-    </a>
+    </a>  
+    </div>
+
 </body>
-
-   <!--    JAVASCRIPT FOR FORM -->
-<script>
-    var x = document.getElementById('login');
-        var y = document.getElementById('register');
-        var z = document.getElementById('btn');
-
-
-
-
-</script>
-
 
 </html>
 
