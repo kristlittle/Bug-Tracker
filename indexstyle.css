@@ -5,47 +5,207 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.full-page
+{
+    height: 100%;
+    width: 100%;
+    background-image: url(bluegradient.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.navbar
+{
+    display:flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-top: 50px;
+}
+
+nav
+{
+    flex: 1;
+}
+
+nav ul
+{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li
+{
+    display: inline-block;
+    margin-right: 80px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
     font-family: sans-serif;
 }
 
-section
+nav ul li a
 {
-    position: relative;
-    min-height: 100px;
-    background: lightsalmon;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: sans-serif;
 }
 
-section .container
+nav ul li button
 {
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: antiquewhite;
+    font-family: sans-serif;
+    background: transparent;
+    cursor: pointer;
+}
+
+nav ul li button:hover
+{
+   color: cornflowerblue;
+}
+
+a
+{
+    text-decoration: none;
+    color: burlywood;
+    font-size: 26px;
+}
+
+/*HIDE FORM --- HERE --- */
+#login-form
+{
+    display: none;
+}
+
+.form-box
+{
+    width: 360px;
+    height: 460px;
     position: relative;
-    width: 800px;
-    height: 500px;
-    background: lightcyan;
-    box-shadow: 0 15px 50px lightsteelblue;
+    margin: 2% auto;
+    background: chocolate;
+    padding: 10px;
     overflow: hidden;
 }
 
-section .container .user
+.button-box
 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-section .container .user .imgBox
-{
+    width: 200px;
+    margin: 35px auto;
     position: relative;
-    width: 50%;
-    height: 100%;
-    background: gainsboro;
-    transition: 0.8s;
+    /*box-shadow: ;     */
+    border-radius: 20px;
 }
 
+.toggle-btn
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
 
+#btn
+{
+    top: 0%;
+    left: 0;
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    background: khaki;
+    border-radius: 34px;
+    transition: .5s;
+}
+
+.input-group-login
+{
+    top: 160px;
+    position: absolute;
+    width: 300px;
+    transition: 0.5s;
+}
+
+.input-group-register
+{
+    top: 120px;
+    position: absolute;
+    width: 300px;
+    transition: 0.5s;
+}
+
+.input-field
+{
+    width: 100%;
+    margin: 5% 0;
+    padding: 10px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn
+{
+    width: 85%;
+    margin: auto;
+    padding: 10px 30;
+    cursor: pointer;
+    display: block;
+    border-radius: 20px;
+    outline: none;
+    background: lightsalmon;
+}
+
+.check-box
+{
+    margin: 30px 10px 36px 0;
+}
+
+span
+{
+    color: #777;
+    font-size: 12px;
+    bottom: 66px;
+    position: absolute;
+}
+
+#login 
+{
+    left: 50px;
+}
+
+#login input
+{
+    color: coral;
+    font-size: 15px;
+}
+
+#register 
+{
+    left: 450px;
+}
+
+#register input
+{
+    color: coral;
+    font-size: 15px;
+}
+
+/* ** CODE SPRINT PROJECT -- BUG TRACKER  ** -->
+<!-- KRISTOFF L.  © Kristoff L. All Rights Reserved. */

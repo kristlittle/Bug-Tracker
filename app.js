@@ -50,6 +50,36 @@ function dragDrop(){
 
 
 
+const btns = document.querySelectorAll("[data-target-modal]");
+const closeModal = document.querySelectorAll(".closeModal");
+const overlay = document.getElementById("overlay");
+
+btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        document.querySelector(btn.dataset.targetModal).classList.add("active");
+        overlay.classList.add("active");
+    });
+});
+
+closeModal.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const modals = btn.closest(".modal");
+        modal.classList.remove("active");
+        overlay.classList.add("active");
+    });
+});
+
+//listen for overlay and close
+window.onclick = (event) => {
+    btn.addEventListener("click", () => {
+        if(event.target == overlay) {
+            const modals = document.querySelectorAll(".modal");
+            modals.forEach((modal) => modal.classList.remove("active"));
+            overlay.classList.remove("active");   
+        }     
+    })
+};
+
 
 
 
@@ -86,3 +116,5 @@ function eventOnCard(card){
 
 
 
+//<!--/* ** CODE SPRINT PROJECT -- BUG TRACKER  ** 
+ //KRISTOFF L.  © Kristoff L. All Rights Reserved.-->

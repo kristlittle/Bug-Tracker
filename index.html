@@ -16,30 +16,59 @@
 
 <body>
 
-    <!-- Sign in Image = blue-yeallow.jpg -->
-    <!-- Log in Image = bluegradient.jpg -->
-
-    <section>
-        <div class="contianer">
-            <div class="user signinBox">
-                <div class="imgBox"> <img src="blue-yeallow.jpg">   </div>
-                <div class="formBox">
-                    <form>
-                        <h2> Sign In </h2>
-                        <input type="text" name="" placeholder="Username">
-                        <input type="password" name="" placeholder="Password">
-                        <input type="text" name="" value="Login">
-                        <p class="signup"> Don't have an Account? <a href="#"> Sign Up.</p>
-
-                    </form>
-
-                </div>
-
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href="index.html"> Home </a>
             </div>
+            <nav>
+                <ul id="menuItems">
+                    <li> <a href="#"> Home </a> </li>
+                    <li> <a href="#"> About </a> </li>
+                    <li> <a href="#"> Bug Tracker </a> </li>
+                    <li> <button class="loginBtn" 
+                          onclick="document.getElementById('login-form').style.display='block'" 
+                          style="width: auto;">
+                    Login</button>   
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </section>
+
+        <div id="login-form" class="login-page">
+            <div class="button-box">
+                <div id="btn">  </div>
+                <button type="button" onclick="login()" class="toggle-btn"> Log In </button>
+                <button type="button" onclick="register()" class="toggle-btn"> Register </button>
+            </div>
+
+            <!--    Login Form-->
+
+            <form id="login" class="input-group-login">
+                <input type="text" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                
+                <input type="checkbox" class="checkbox"><span>Remember Password </span> 
+                <button type="submit"  class="submit-btn"> Log In </button>
+            </form>
+            
+            <!--    Registration Form-->
+            <form id="register" class="input-group-register">
+                <input type="text" class="input-field" placeholder="First Name" required>
+                <input type="text" class="input-field" placeholder="Last Name" required>      
+                <input type="email" class="input-field" placeholder="Email ID" required>
+                <input type="text" class="input-field" placeholder="Last Name" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+   
+                <input type="checkbox" class="checkbox"><span>I agree to Terms & Conditions </span> 
+                <button type="submit"  class="submit-btn"> Register </button>
+            </form>
 
 
+        </div>
+
+
+    </div>
 
 
     <a href="bugtrack.html">
@@ -48,8 +77,14 @@
     </a>
 </body>
 
+   <!--    JAVASCRIPT FOR FORM -->
+<script>
+    var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
 
-<script type="javascript">
+
+
 
 </script>
 
@@ -58,6 +93,5 @@
 
 
 
-
-<!--CODE SPRINT #1 -- Bug/Issues Tracker  ** --
-   KRISTOFF L.  © Kristoff L. All Rights Reserved-->
+<!--/* ** CODE SPRINT PROJECT -- BUG TRACKER  ** 
+ KRISTOFF L.  © Kristoff L. All Rights Reserved.-->
