@@ -8,11 +8,12 @@
     <meta name="author" content="Kristoff L.">
     <meta name="viewpoint" content="width=devicewidth", initial-scale="1.0">
 
-    <title> Bug Tracker </title>
 
     <link rel="stylesheet" href="indexstyle.css">
     <title> Home Page</title>
 </head>
+
+<!-- -->
 
 
 <body>
@@ -22,13 +23,15 @@
         <div class="form-container sign-up-container"> 
             <form action="#">
                 <h1> Create Account</h1>
+                <!-- Social media Links **NOT NEEDED**  -->
+
                 <div class="social-links">
                     <a  href="#" class="social"><i class="fab fa-facebook"></i></a>
                     <a  href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                     <a  href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
 
-                <span> or use email resgitration</span>
+                <span> or use email registration</span>
                 <input type="text" placeholder="Name"/>
                 <input type="email" placeholder="Email"/>
                 <input type="password" placeholder="Password"/>
@@ -36,52 +39,73 @@
             </form>
         </div>
 
-        <!--    Sign-In/Log In In Container-->
+        <!--    Sign-In/Log In In Container -->
+
         <div class="form-container sign-in-container"> 
             <form action="#">
                 <h1> Log In</h1>
+                <!-- Social media Links **NOT NEEDED**  
+
                 <div class="social-container">
                     <a  href="#" class="social"><i class="fab fa-facebook"></i></a>
                     <a  href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                     <a  href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-
+                -->
                 <span> or use your account</span>
                 <input type="email" placeholder="Email"/>
                 <input type="password" placeholder="Password"/>
+                <a  href="#"> Forgot Password? </a>
+
                 <button> Sign In !</button>
             </form>
         </div>
 
-         <!--    Welcome Back! Action Director Container-->
-         <div class="overlay-container"> 
-            <form action="#">
-                <h1> Welcome Back!</h1>
-                <p>
-                    To keep issues Please Login with Information
-                </p>
-                <button class="ghost" id="signIn"> Log In</button>
+        <!--    Welcome Back! Action Director Container -->
 
-                <div class="overlay-panel overlay-right">
-                   
+        <div class="overlay-container"> 
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <form action="#">
+                    <h1> Welcome Back!</h1>
+                        <p>
+                            To keep issues Please Login with Information
+                        </p>
+                        <button class="ghost" id="signIn"> Log In</button>
+
+                            <div class="overlay-panel overlay-right">    
+                            </div>
+                            <h1> Hello!</h1>
+                            <p>
+                                To start Issues Tracking Sign Up with Information
+                            </p>
+                        <button class="ghost" id="signUn"> Sign Up</button>
+                    </form>
                 </div>
-                <h1> Welcome Back!</h1>
-                <p>
-                    To start Issues Tracking Sign Up with Information
-                </p>
-                <button class="ghost" id="signUn"> Sign Un</button>
-            </form>
+            </div>    
         </div>
+
+
 
     </div>
     
-     <!--   Bypass Action Container & button-->
+     <!--   Bypass Action Container & button    -->
+
     <div>
        <a href="bugtrack.html">
         <button> ByPass To Tracker </button>
         <small><p>Issues will not be saved with bypassing login.</p></small>
     </a>  
     </div>
+
+
+
+
+
+
+
+
+
 
 </body>
 
