@@ -68,7 +68,7 @@ button:focus {
 }
 
 button.ghost {
-	background-color: transparent;
+	background-color: moccasin;
 	border-color: #FFFFFF;
 }
 
@@ -164,9 +164,9 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
+	background: rosybrown;
 	background: -webkit-linear-gradient(to right, moccasin, #dd962b);
-	background: linear-gradient(to right, beige, rgb(197, 151, 91));
+	background: linear-gradient(to right, beige, rgb(197, 151, 91)) no-repeat 0 0 / cover;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -212,7 +212,7 @@ input {
 
 .overlay-right {
 	right: 0;
-	transform: translateX(0);
+	transform: translateX(-20);
 }
 
 .container.right-panel-active .overlay-right {
