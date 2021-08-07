@@ -9,55 +9,55 @@
     <meta name="viewpoint" content="width=devicewidth", initial-scale="1.0">
 
     <title> Bug Tracker </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bugstyle.css">
 </head>
-
-<!-- 
-    MODAL ATTEMPT - Below... use popup form instead
-    
-    <button id="mBtn">  + Add Issues  </button>
-    <div id="mModal" class="modal">   </div>
-
--->
 
 <body>
 
+<!--  MODAL -- Add Issues using Modal popup.    
+    <div class="modal" id="issue-form">
+        <div class="header">
+            <div class="title"> Add Issue  </div>
+            <button class="btn close-modal" > &times; </button>
+        </div>
+            <div class="body">
+                <input type="text" id="issue-input">
+                <input type="text" id="issue-body">
+                <input type="text" id="issue-submit">
+            </div>
+
+    </div>
+   --> 
+    
     <div id="container"> 
-        <div class="list">
+        
+        <div class="status">
             <h1> ISSUES</h1>
            
-                <!--Add Issues Button-->
-                <button class="addBtn"> + ADD ISSUES</button>
+                <!--Add Issues Button-- modal added -->
+                <button class="addBtn" data-target-modal="#issue-form"> + ADD ISSUES</button>
                 
                 <div class="card" draggable="true">
-                <div class="title"> 08/06/2021 - TRacking page. </div>
+                <div class="title"> 08/06/2021 - Tracking page. </div>
                 <div class="description">
-               Javascript not moving blocks of issues to different pile/ containers.
+               Javascript not moving blocks to another column.
                 </div> 
             </div>        
-
         </div>
         
 
         <!--NOT STARTED CONTAINER-->
-        <div class="list">
-            <h1> Not Started </h1>
-
-            <div class="card">
-            <div class="title"> Lorem Ipsum - Test Header </div>
-            <div class="description">
-            Lorem Ipsum is simply dummy text.
-            </div> 
-        </div>
+        <div class="status" >
+            <h1> Not Started </h1>                
         </div>
 
         <!--IN PROGRESS CONTAINER-->
-        <div class="list">
+        <div class="status">
             <h1> In Progress </h1>
         </div>
 
         <!--COMPLETED CONTAINER-->
-        <div class="list">
+        <div class="status">
             <h1> Completed </h1>
         </div>
    
