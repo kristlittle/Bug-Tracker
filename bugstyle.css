@@ -62,15 +62,21 @@ h1
 }
 
 
-/* BUTTON */ 
+/* BUTTON styling */ 
 #addBtn
 {
-    font: 22px; 
-    outline: none;
     width: 100%;
-    padding: 8px 20px;
-    border: 1px;   
-    background-color: chocolate;
-    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: lightsalmon;  
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
+#addBtn:hover
+{
+    background-color: coral;
 }
