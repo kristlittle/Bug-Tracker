@@ -17,6 +17,7 @@ for (const list of allListss) {
 }
 
 //DRAG FUNSTIONS
+
 //start dragging element
 function dragStart(){
     console.log("Start");
@@ -83,35 +84,8 @@ window.onclick = (event) => {
 
 
 
-/*
-cards.forEach((card) => {
-    eventOnCard (card);
-    
-    //card.addEventListener ("dragend", dragEnd);  
-});
 
 
-lists.forEach((list) =>{
-    list.addEventListener('dragOver', (e)=> {
-        let draggingCard = document.querySelectorAll('.dragging');
-        list.appendChild(draggingCard);     
-    });
-})
-
-function eventOnCard(card){
-    cards.addEventListener('dragstart', (e) => {
-        cards.classList.add('dragging');
-        console.log("draggins Started")
-    })
-
-    cards.addEventListener('dragend', (e) => {
-        cards.classList.remove('dragging');
-        console.log("draggin Ended")
-    })
-
-}
-
-*/
 
 
 
