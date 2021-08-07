@@ -65,10 +65,12 @@ h1
 /* BUTTON */ 
 #addBtn
 {
-    padding: 8px 14px;
-    background-color: chocolate;
+    font: 22px; 
     outline: none;
-    border: none;
     width: 100%;
-    font: 22px;
+    padding: 8px 20px;
+    border: 1px;   
+    background-color: chocolate;
+    border-radius: 4px;
+
 }
