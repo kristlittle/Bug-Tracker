@@ -63,11 +63,12 @@ function dragLeave()
     console.log("dragLeave");   
 }
 
-//dropping 
+//drag to be dropped 
 function dragDrop()
 {
     this.style.border = "none";
-    console.log("dragDrop");   
+    this.appendChild(draggableTodo);
+    console.log("dropped");   
 }
 
 //<!--/* ** CODE SPRINT PROJECT -- BUG TRACKER  ** 
