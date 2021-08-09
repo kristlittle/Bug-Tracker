@@ -2,7 +2,7 @@
 
 
 const cards = document.querySelectorAll(".card");
-const allLists = document.querySelectorAll(".list");
+const allLists = document.querySelectorAll(".status");
 
 let draggableTodo = null;
 
@@ -34,11 +34,11 @@ function dragEnd()
         
 }
 
-allLists.forEach((list) => {
-    list.addEventListener("dragover", dragOver);
-    list.addEventListener("dragenter", dragEnter);
-    list.addEventListener("dragleave", dragLeave);
-    list.addEventListener("drop", dragDrop);
+allLists.forEach((status) => {
+    status.addEventListener("dragover", dragOver);
+    status.addEventListener("dragenter", dragEnter);
+    status.addEventListener("dragleave", dragLeave);
+    status.addEventListener("drop", dragDrop);
 
 })
 //
@@ -46,13 +46,13 @@ allLists.forEach((list) => {
 function dragOver(e)
 {
     e.preventDefault();
-    console.log("dragOver");   
+    //console.log("dragOver");   
 }
 
 //entereing new block
 function dragEnter()
 {
-    this.style.border = "1px dashed #fff";
+    this.style.border = "3px dashed #ddd";
     console.log("dragEnter");   
 }
 
@@ -70,6 +70,16 @@ function dragDrop()
     this.appendChild(draggableTodo);
     console.log("dropped");   
 }
+
+
+// Modal pop up
+const btn = document.querySelectorAll("[data-target-modal]");
+const closeModal = document.querySelectorAll(".closeModal")
+
+
+
+
+
 
 //<!--/* ** CODE SPRINT PROJECT -- BUG TRACKER  ** 
  //KRISTOFF L.  © Kristoff L. All Rights Reserved.-->
