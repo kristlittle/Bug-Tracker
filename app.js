@@ -12,6 +12,7 @@ cards.forEach((card) => {
     card.addEventListener("dragend", dragEnd);
 })
 
+//MOVING AND DRAGGIN CARDS FUNCTIONS.
 //drag action started
 function dragStart()
 {
@@ -72,9 +73,39 @@ function dragDrop()
 }
 
 
-// Modal pop up
-const btn = document.querySelectorAll("[data-target-modal]");
-const closeModal = document.querySelectorAll(".closeModal")
+// MODAL POP UP
+const btns = document.querySelectorAll("[data-target-modal]");
+const closeModal = document.querySelectorAll(".closeModal");
+const overlay = document.getElementById("overlay");
+
+
+btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+       document.querySelector(btn.dataset.targetModal).classList.add("active");
+       overlay.classList.add("active");
+    });
+});
+
+
+closeModal.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const modal = btn.closest(".modal");
+        modal.classList.remove("active");
+        overlay.classList.remove("active");
+    });
+});
+
+
+window.onclick = (event) => {
+    if (event.target == overlay)
+    {
+        const modals = document.querySelectorAll(".modal");
+        modals.forEach((modal) => modal.classList.remove("active"));
+        overlay.classList.remove("active");  
+    }   
+}
+
+// TODO CREATION.
 
 
 

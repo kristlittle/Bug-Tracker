@@ -41,7 +41,7 @@ h1
   box-sizing: border-box;
 }
 
-
+/* CARDS styling - issue blocks  */ 
 .card 
 {
   background-color: moccasin;
@@ -60,6 +60,36 @@ h1
 {
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+
+#notes
+{
+    float: left;
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: bisque;
+    
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 20px;
+}
+
+.notepad
+{
+    width: 100%;
+    border-radius: 20px;
+    background-color: rosybrown;
+}
+
+
+.notebook
+{
+    background-color: aliceblue;
 }
 
 
@@ -88,6 +118,7 @@ h1
     transform: scale(0.8);
 }
 
+/* MODAL styling - popup for issues */ 
 .modal-btn
 {
     background-color: transparent;
@@ -119,13 +150,31 @@ h1
     justify-content: space-between;
     align-items: center;
     padding: 12px;
-    background-color: burlywood;
+    background-color: rgb(247, 241, 166);
+    text-align: center;
+    text-transform: uppercase;
 
 }
+
+/*
+.modal .issue-head
+{
+    font-weight: bold;
+    margin-bottom: 6px;
+    text-align: center;
+}
+*/
 
 .modal .body
 {
     padding: 12px;
+}
+
+.closeModal
+{
+    background: none;
+    border: none;
+    font-size: 12px;
 }
 
 #overlay
@@ -154,7 +203,7 @@ h1
 #issue-submit
 {
     background-color: paleturquoise;
-    color: cornflowerblue;
+    color: rgb(95, 111, 141);
     font-size: 22px;
     border: none;
 }
