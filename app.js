@@ -144,11 +144,13 @@ function createTodo()
 
 const close_btns = document.querySelectorAll(".close");
 
-close_btns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    btn.parentElement.style.display = "none";
-  });
-});
+    close_btns.forEach((btn) => 
+    {
+    btn.addEventListener("click", () => 
+    {
+        btn.parentElement.style.display = "none";
+    });
+    });
 
 
 
