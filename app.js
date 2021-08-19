@@ -73,7 +73,7 @@ function dragDrop()
 }
 
 
-// MODAL POP UP
+// MODAL 
 const btns = document.querySelectorAll("[data-target-modal]");
 const closeModal = document.querySelectorAll(".closeModal");
 const overlay = document.getElementById("overlay");
@@ -86,7 +86,7 @@ btns.forEach((btn) => {
     });
 });
 
-
+//MODAL: removing modal popup
 closeModal.forEach((btn) => {
     btn.addEventListener("click", () => {
         const modal = btn.closest(".modal");
@@ -105,7 +105,7 @@ window.onclick = (event) => {
     }   
 }
 
-// TODO CREATION.
+/* TODO CREATION.
 const todo_submit = document.getElementById("todo_submit");
 
 todo_submit.addEventListener("click", createTodo);
@@ -139,7 +139,7 @@ function createTodo()
     todo_div.addEventListener("dragend", dragEnd);
 
     document.getElementById("todo_input").value = "";
-    todo_form.classList.remove("active");
+    issue_form.classList.remove("active");
     overlay.classList.remove("active");
 }
 
@@ -154,7 +154,7 @@ const close_btns = document.querySelectorAll(".close");
     });
 
 
-
+*/
 
 
 
