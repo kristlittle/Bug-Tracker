@@ -117,7 +117,7 @@ function createTodo()
     const txt = document.createTextNode(input_val);
 
     todo_div.appendChild(txt);
-    todo_div.classList.add("todo");
+    todo_div.classList.add("issue");
     todo_div.setAttribute("draggable", "true");
 
     //SPAN CREATION
@@ -128,6 +128,7 @@ function createTodo()
 
     todo_div.appendChild(span);
 
+    //ERROR : "no_status" is not defined at HTMLInputElement.createTodo
     no_status.appendChild(todo_div);
 
     span.addEventListener("click", () => {
