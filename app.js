@@ -42,7 +42,8 @@ allLists.forEach((status) => {
     status.addEventListener("drop", dragDrop);
 
 })
-//
+
+
 //drag over new block
 function dragOver(e)
 {
@@ -110,10 +111,7 @@ const todo_submit = document.getElementById("todo_submit");
 
 //todo_submit.addEventListener("click", createTodo);
 
-todo_submit.addEventListener("click", () => {
-    const print = createIssue
-        }
-    );
+todo_submit.addEventListener("click", createIssue);
 
     
 
