@@ -105,11 +105,24 @@ window.onclick = (event) => {
     }   
 }
 
-/* TODO CREATION.
+/* TODO CREATION. */
 const todo_submit = document.getElementById("todo_submit");
 
-todo_submit.addEventListener("click", createTodo);
+//todo_submit.addEventListener("click", createTodo);
 
+todo_submit.addEventListener("click", () => {
+    const print = createIssue
+        }
+    );
+
+    
+
+function createIssue()
+{
+    console.log("BUTTON WORKING!!");
+}
+
+/*
 function createTodo() 
 {
     const todo_div = document.createElement("div");
@@ -143,6 +156,7 @@ function createTodo()
     overlay.classList.remove("active");
 }
 
+
 const close_btns = document.querySelectorAll(".close");
 
     close_btns.forEach((btn) => 
@@ -153,8 +167,8 @@ const close_btns = document.querySelectorAll(".close");
     });
     });
 
-
 */
+
 
 
 
