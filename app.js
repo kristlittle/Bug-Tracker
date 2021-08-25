@@ -74,18 +74,21 @@ function dragDrop()
 }
 
 
-// MODAL 
+// MODAL - JS 
 const btns = document.querySelectorAll("[data-target-modal]");
 const closeModal = document.querySelectorAll(".close-modal");
 const overlay = document.getElementById("overlay");
 
 
+//ERROR: overlay.classList.add("active"); = Uncaught TypeError: Cannot read property 'classList' of null
 btns.forEach((btn) => {
     btn.addEventListener("click", () => {
        document.querySelector(btn.dataset.targetModal).classList.add("active");
        overlay.classList.add("active");
     });
 });
+
+//ERROR: overlay.classList.remove("active"); = Uncaught TypeError: Cannot read property 'classList' of null
 
 //MODAL: removing modal popup
 closeModal.forEach((btn) => {
@@ -106,7 +109,11 @@ window.onclick = (event) => {
     }   
 }
 
-/* TODO CREATION. */
+
+
+
+
+/* ISSUE CREATION. */
 const issue_submit = document.getElementById("todo_submit");
 
 //todo_submit.addEventListener("click", createTodo);
