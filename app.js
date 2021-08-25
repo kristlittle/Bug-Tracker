@@ -107,11 +107,11 @@ window.onclick = (event) => {
 }
 
 /* TODO CREATION. */
-const todo_submit = document.getElementById("todo_submit");
+const issue_submit = document.getElementById("todo_submit");
 
 //todo_submit.addEventListener("click", createTodo);
 
-todo_submit.addEventListener("click", createIssue);
+issue_submit.addEventListener("click", createIssue);
 
     
 
@@ -119,6 +119,8 @@ function createIssue()
 {
     console.log("BUTTON WORKING!!");
 }
+
+
 
 /*
 function createTodo() 
@@ -153,8 +155,9 @@ function createTodo()
     issue_form.classList.remove("active");
     overlay.classList.remove("active");
 }
+*/
 
-
+//Close Modal
 const close_btns = document.querySelectorAll(".close");
 
     close_btns.forEach((btn) => 
@@ -165,7 +168,7 @@ const close_btns = document.querySelectorAll(".close");
     });
     });
 
-*/
+
 
 
 

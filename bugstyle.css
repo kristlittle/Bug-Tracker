@@ -196,7 +196,7 @@ h1
     display: block;
 }
 
-#todo-input, #todo-submit
+#issue-input, #isuue-submit
 {
     padding: 12px;
     width: 100%;
@@ -211,7 +211,7 @@ h1
     border: none;
 }
 
-#todo_submit {
+#issue_submit {
 background-color: #4caf50;
 color: #f3f3f3;
 font-size: 1.25rem;
